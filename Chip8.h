@@ -6,12 +6,13 @@ class Chip8
 
         bool drawFlag;
 
+        void init();
         void emulateCycle();
         void debugRender();
         void loadApplication(const char * filename);
 
-    unsigned char gfx[64 * 32]; //black and white graphics with 2048 pixelsunsigned char gfx[64 * 32];
-    unsigned char key[16]; //it has hex based 16 keys
+        unsigned char gfx[64 * 32]; //black and white graphics with 2048 pixels
+        unsigned char key[16]; //it has hex based 16 keys
     
 
     private:
@@ -26,6 +27,4 @@ class Chip8
         
         unsigned char delay_timer; 
         unsigned char sound_timer;
-
-        void init();
 };
