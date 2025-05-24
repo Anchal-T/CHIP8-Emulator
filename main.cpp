@@ -9,7 +9,7 @@ const int CHIP8_WIDTH = 64;
 const int CHIP8_HEIGHT = 32;
 
 // Window dimensions (scaled)
-const int SCREEN_SCALE = 10;
+const int SCREEN_SCALE = 20;
 const int SCREEN_WIDTH = CHIP8_WIDTH * SCREEN_SCALE;
 const int SCREEN_HEIGHT = CHIP8_HEIGHT * SCREEN_SCALE;
 

@@ -405,7 +405,7 @@ void Chip8::loadApplication(const char * filename)
 
     // Copy the file into the buffer
     size_t result = fread(buffer, 1, lSize, pFile);
-    if (result != lSize)
+    if (result != (long unsigned int)lSize)
     {
         printf("Error: Reading file failed\n");
         free(buffer);
