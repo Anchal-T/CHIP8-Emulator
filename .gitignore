@@ -2,3 +2,4 @@ chip8emulator
 chip8.o
 main.o
 Tetris.ch8
+.vscode/
