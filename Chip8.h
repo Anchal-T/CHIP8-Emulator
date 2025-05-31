@@ -1,3 +1,8 @@
+#ifndef CHIP8_H
+#define CHIP8_H
+
+#include <cstdint>
+
 class Chip8
 {
     public:
@@ -11,20 +16,21 @@ class Chip8
         void debugRender();
         void loadApplication(const char * filename);
 
-        unsigned char gfx[64 * 32]; //black and white graphics with 2048 pixels
-        unsigned char key[16]; //it has hex based 16 keys
-    
+        uint8_t gfx[64 * 32];
+        uint8_t key[16];
 
     private:
-        unsigned short opcode; //chip 8 has 35 opcode
-        unsigned short I ; //index register
-        unsigned short pc; //program counter
-        unsigned short sp; //stack counter
+        uint16_t opcode;
+        uint16_t I;
+        uint16_t pc;
+        uint16_t sp;
 
-        unsigned char V[16]; //it has 15 8-bit general register from V0 to V15 and last is carry flag
-        unsigned char memory[4096]; //it has 4k memory in total
-        unsigned short stack[16]; 
+        uint8_t V[16];
+        uint8_t memory[4096];
+        uint16_t stack[16];
         
-        unsigned char delay_timer; 
-        unsigned char sound_timer;
+        uint8_t delay_timer; 
+        uint8_t sound_timer;
 };
+
+#endif
