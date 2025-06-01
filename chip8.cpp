@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+
 #include "Chip8.h"
 
 unsigned char chip8_fontset[80] = 
